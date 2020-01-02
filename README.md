@@ -10,10 +10,10 @@ in Java 8 a call to sun.misc.ObjectInputFilter.Config.setObjectInputFilter(Objec
 sets the stream's filter.
 So the fix is to create two versions of Cornflakerizer, Cornflakerizer_Java8 and Cornflakerizer. With Cornflakerizer  for Java9+ and Cornflakerizer_Java8 used for... well you get the idea.
 
-##Why
+## Why
 Cornflakerizer is a tool to improve the security of using Java's Serialization functionality. It builds on the serialization whitelisting introduced in JEP-290, which works but is difficult to configure and maintain. 
 As it requires the developer to create and maintain a list of acceptable classes via a regex in a properties file/system property. This "works" but in reality is not a maintainable solution as any change to the data being deserialized would require the developer to remember to update the jdk.serialFilter list. And for a large application that list would be massive. 
-##How
+## How
 Cornflakerizer builds on the whitelisting technology in JEP-290 by automatically generating the whitelist based on what the type of expected dersialized classes.
 This should block Java serialization attacks by ensuring that only the expected class is deserialized rather than a gadget class with a malicious payload.
 For example rather than using :
