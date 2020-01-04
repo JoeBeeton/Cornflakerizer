@@ -5,6 +5,23 @@
     <groupId>uk.org.freedonia</groupId>
     <artifactId>Cornflakerizer</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <name>Cornflakerizer</name>
+    <description>A JEP-290 based Java Deserialization whitelist filter, which builds up the whitelist automatically from the expected class/classes.</description>
+    <url>https://github.com/JoeBeeton/Cornflakerizer/</url>
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <name>Joe Beeton</name>
+            <email>cornflakerizer@freedonia.org.uk</email>
+            <organization>Freedonia</organization>
+            <organizationUrl>http://freedonia.org.uk</organizationUrl>
+        </developer>
+    </developers>
     <properties>
         <maven.compiler.source>1.9</maven.compiler.source>
         <maven.compiler.target>1.9</maven.compiler.target>
